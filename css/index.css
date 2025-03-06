@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-image: url('https://content.elmueble.com/medio/2024/02/23/frases-de-feliz-cumpleanos_db57ab4b_240223161013_1200x630.jpg');
-    background-size: 100%;  
+    background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -13,6 +13,7 @@ body {
     position: relative;
     overflow: hidden;
     color: #fff;
+    padding: 10px;
 }
 
 .heart-container {
@@ -24,12 +25,6 @@ body {
     pointer-events: none;
 }
 
-.kitty {
-    width: 180px;
-    display: block;
-    margin: 0 auto;
-}
-
 .container {
     text-align: center;
     z-index: 2;
@@ -37,15 +32,23 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+.kitty {
+    width: 220px;
+    display: block;
+    margin: 0 auto;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #FFD700;
 }
 
 .intro {
-    font-size: 25px;
+    font-size: 20px;
     color: #FF69B4;
     margin-bottom: 20px;
 }
@@ -60,6 +63,7 @@ h2 {
     background-color: #FF69B4;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 .buttons button:hover {
@@ -69,7 +73,7 @@ h2 {
 .hidden {
     display: none;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFD700;
     font-weight: bold;
     animation: fadeIn 2s ease;
@@ -104,14 +108,32 @@ h2 {
     }
 }
 
+/* Estilos Responsivos */
 @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 400px;
+    }
+
     .kitty {
-        width: 140px;
+        width: 150px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 18px;
     }
 
     .buttons button {
         font-size: 16px;
         padding: 10px 20px;
+    }
+
+    .hidden {
+        font-size: 18px;
     }
 
     .heart {
@@ -120,13 +142,30 @@ h2 {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 350px;
+    }
+
     .kitty {
-        width: 100px;
+        width: 120px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .intro {
+        font-size: 16px;
     }
 
     .buttons button {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    .hidden {
+        font-size: 16px;
     }
 
     .heart {

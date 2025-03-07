@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url('https://content.elmueble.com/medio/2024/02/23/frases-de-feliz-cumpleanos_db57ab4b_240223161013_1200x630.jpg');
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-acuarela-pinceles-color-pastel-hojas_220290-78.jpg');
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
@@ -13,6 +13,7 @@ body {
     position: relative;
     overflow: hidden;
     color: #fff;
+    padding: 10px;
 }
 
 .heart-container {
@@ -24,12 +25,6 @@ body {
     pointer-events: none;
 }
 
-.kitty {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
-}
-
 .container {
     text-align: center;
     z-index: 2;
@@ -37,15 +32,23 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+.kitty {
+    width: 220px;
+    display: block;
+    margin: 0 auto;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #FFD700;
 }
 
 .intro {
-    font-size: 25px;
+    font-size: 20px;
     color: #FF69B4;
     margin-bottom: 20px;
 }
@@ -60,6 +63,7 @@ h2 {
     background-color: #FF69B4;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 .buttons button:hover {
@@ -69,7 +73,7 @@ h2 {
 .hidden {
     display: none;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFD700;
     font-weight: bold;
     animation: fadeIn 2s ease;
@@ -104,36 +108,15 @@ h2 {
     }
 }
 
-/* ---- RESPONSIVE DESIGN ---- */
-
-/* Tabletas (768px a 1024px) */
-@media (max-width: 1024px) {
-    .kitty {
-        width: 180px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    .intro {
-        font-size: 20px;
-    }
-
-    .buttons button {
-        font-size: 16px;
-        padding: 12px 24px;
-    }
-
-    .heart {
-        font-size: 50px;
-    }
-}
-
-/* Teléfonos (menos de 768px) */
+/* Estilos Responsivos */
 @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 400px;
+    }
+
     .kitty {
-        width: 140px;
+        width: 150px;
     }
 
     h2 {
@@ -145,28 +128,31 @@ h2 {
     }
 
     .buttons button {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 20px;
     }
 
-    .heart {
-        font-size: 40px;
+    .hidden {
+        font-size: 18px;
     }
 
-    .container {
-        padding: 15px;
-        width: 90%;
+    .heart {
+        font-size: 50px;
     }
 }
 
-/* Teléfonos pequeños (menos de 480px) */
 @media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 350px;
+    }
+
     .kitty {
-        width: 100px;
+        width: 120px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .intro {
@@ -174,16 +160,15 @@ h2 {
     }
 
     .buttons button {
-        font-size: 12px;
+        font-size: 14px;
         padding: 8px 16px;
     }
 
-    .heart {
-        font-size: 30px;
+    .hidden {
+        font-size: 16px;
     }
 
-    .container {
-        padding: 10px;
-        width: 95%;
+    .heart {
+        font-size: 40px;
     }
 }

@@ -37,7 +37,6 @@ function showMessage() {
     typeMessage();
 }
 
-
 function toggleMusic() {
     const music = document.getElementById("music");
     if (music.paused) {
@@ -64,3 +63,12 @@ function createHeart() {
 }
 
 setInterval(createHeart, 100);
+
+// Ajustar el texto dentro de la caja para dispositivos móviles
+window.onload = function() {
+    const container = document.querySelector('.container');
+    container.style.maxWidth = '90%'; // Ajustar el ancho máximo
+    container.style.wordWrap = 'break-word'; // Asegurar que el texto se mantenga dentro
+    container.style.overflowWrap = 'break-word'; // Otra propiedad para evitar desbordamiento
+    container.style.padding = '15px';
+};

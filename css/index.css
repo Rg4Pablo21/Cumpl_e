@@ -120,32 +120,26 @@ h2 {
     max-height: 80vh; /* Altura máxima */
     overflow-y: auto; /* Agregar desplazamiento si es necesario */
 }
-
-.hidden {
-    display: none;
-    margin-top: 20px;
-    font-size: 18px; /* Tamaño del texto más pequeño */
-    color: #FFD700;
-    font-weight: bold;
-    text-align: justify;
-    line-height: 1.4;
-    word-wrap: break-word;
-}
-
-#message {
-    max-width: 100%; /* Que no se pase del ancho del contenedor */
-    padding: 10px;
-    overflow-wrap: break-word; /* Romper palabras si es necesario */
-}
-
 @media (max-width: 600px) {
     .container {
-        width: 95%;
-        max-width: 400px; /* Reducir tamaño en pantallas pequeñas */
+        width: 90%;
+        max-width: 400px;
         padding: 15px;
+        text-align: center;
     }
 
     .hidden {
-        font-size: 16px; /* Hacer el texto más pequeño en móviles */
+        font-size: 14px; /* Texto más pequeño para que se vea bien */
+        text-align: justify;
+        line-height: 1.4;
+        word-wrap: break-word;
+        padding: 10px;
+    }
+
+    #message {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        font-size: 14px;
+        line-height: 1.5;
     }
 }

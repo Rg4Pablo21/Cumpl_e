@@ -8,7 +8,7 @@ function playMusic() {
 }
 
 function showMessage() {
-    const message = '¡Feliz Cumpleaños Eileen!!!!! 🎂🎉 Eileen, aunque el tiempo pase y las estaciones cambien, quiero que sepas que sigues siendo la misma niña tierna, cariñosa y llena de luz que siempre tú has sido. Tu esencia no ha cambiado, y tu dulzura sigue iluminando todo a tu alrededor. Que este día sea tan especial y tan hermoso como tú." 💖\n\nEl destino nos separó por un tiempo, pero nos volvió a reunir cuando menos lo esperábamos. No sabes cuánto significa para mí haberte encontrado de nuevo. Es como si el tiempo hubiera decidido darnos otra oportunidad para seguir compartiendo momentos especiales juntos. Gracias por estar aquí, Eileen. Feliz Cumpleaños 💕';
+    const message = '¡Feliz Cumpleaños Eileen!!!!! 🎂🎉 Eileen, aunque el tiempo pase y las estaciones cambien, quiero que sepas que sigues siendo la misma niña tierna, cariñosa y llena de luz que siempre tú has sido. Tu esencia no ha cambiado, y tu dulzura sigue iluminando todo a tu alrededor. Que este día sea tan especial y tan hermoso como tú." 💖\n\nEl destino nos separó por un tiempo, pero nos volvió a reunir cuando menos lo esperábamos. No sabes cuánto significa para mí haberte encontrado de nuevo. Es como si el universo hubiera decidido darnos otra oportunidad para seguir compartiendo momentos hermosos juntos. Gracias por estar aquí, Eileen. 💕';
 
     const messageContainer = document.getElementById('message');
     const button = document.querySelector('.yes');
@@ -36,7 +36,6 @@ function showMessage() {
 
     typeMessage();
 }
-
 function toggleMusic() {
     const music = document.getElementById("music");
     if (music.paused) {

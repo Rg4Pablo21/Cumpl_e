@@ -108,18 +108,7 @@ h2 {
         opacity: 0;
     }
 }
-.container {
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    max-width: 500px; /* Ancho máximo */
-    width: 90%;
-    max-height: 80vh; /* Altura máxima */
-    overflow-y: auto; /* Agregar desplazamiento si es necesario */
-}
+
 @media (max-width: 600px) {
     .container {
         width: 90%;

@@ -1,3 +1,4 @@
+
 body {
     text-align: center;
     background-image: url('https://img.freepik.com/vector-gratis/fondo-acuarela-pinceles-color-pastel-hojas_220290-78.jpg');
@@ -105,70 +106,5 @@ h2 {
     100% {
         top: 100vh;
         opacity: 0;
-    }
-}
-
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-        max-width: 400px;
-    }
-
-    .kitty {
-        width: 150px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    .intro {
-        font-size: 18px;
-    }
-
-    .buttons button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .hidden {
-        font-size: 18px;
-    }
-
-    .heart {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-        max-width: 350px;
-    }
-
-    .kitty {
-        width: 120px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    .intro {
-        font-size: 16px;
-    }
-
-    .buttons button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .hidden {
-        font-size: 16px;
-    }
-
-    .heart {
-        font-size: 40px;
     }
 }

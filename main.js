@@ -12,23 +12,31 @@ function showMessage() {
     // Mostrar el mensaje y deshabilitar el botón
     messageContainer.style.display = 'block';
     button.disabled = true;
-    button.style.opacity = '0.6';  // Efecto visual de botón deshabilitado
+    button.style.opacity = '0.6';
     button.style.cursor = 'not-allowed';
 
-    // Limpiar el contenido previo antes de escribir el nuevo mensaje
     messageContainer.innerHTML = '';  
     let index = 0;
 
-    // Función para escribir el mensaje letra por letra
     function typeMessage() {
         if (index < message.length) {
             messageContainer.innerHTML += message.charAt(index);
             index++;
-            setTimeout(typeMessage, 50);  // Intervalo entre cada letra
+            setTimeout(typeMessage, 50);
         }
     }
 
-    typeMessage();  // Iniciar la animación de escritura
+    typeMessage();
+}
+
+// Función para reproducir y pausar la música
+function toggleMusic() {
+    var music = document.getElementById("music");
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
 }
 
 // Generar corazones cayendo
@@ -37,13 +45,12 @@ function createHeart() {
     const heart = document.createElement('div');
     heart.classList.add('heart');
     heart.textContent = '❤️';
-    
-    const startPositionX = Math.random() * window.innerWidth;  // Posición aleatoria en el eje X
+
+    const startPositionX = Math.random() * window.innerWidth;
     heart.style.left = `${startPositionX}px`;
-    
+
     heartContainer.appendChild(heart);
 
-    // Eliminar el corazón después de la animación
     setTimeout(() => {
         heart.remove();
     }, 3000);

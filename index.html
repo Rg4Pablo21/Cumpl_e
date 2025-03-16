@@ -8,6 +8,10 @@
 </head>
 <body>
     
+    <audio id="music" autoplay loop>
+        <source src="327a1c8250fb5c30c5bd8bd8e12c2edc.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="heart-container"></div>
     <div class="container">
         <img class="kitty" id="kitty" src="https://i.giphy.com/M0Wi576l2mJbNhrXwh.webp" alt="Hello Kitty">
@@ -15,9 +19,11 @@
         <p class="intro">Hoy es un día muy especial, y quiero que lo sepas, eres la persona más increíble y especial para mí. ¡Te quiero muchísimo!</p>
         <div class="buttons">
             <button class="yes" onclick="showMessage()">¡Dale clic para mi mensaje especial!</button>
+            <button onclick="toggleMusic()">🎵 Pausar / Reproducir Música</button>
         </div>
-        <p class="hidden" id="message">¡Feliz Cumpleaños Eileen!!!!! 🎂🎉 Eileen, aunque el tiempo pase y las estaciones cambien, quiero que sepas que sigues siendo la misma niña tierna, cariñosa y llena de luz que siempre tu has sido. Tu esencia no ha cambiado, y tu dulzura sigue iluminando todo a tu alrededor. Que este día sea tan especial y tan hermoso como tú." 💖</p>
+        <p class="hidden" id="message"></p>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Emily Dayana</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Nota: corregimos el ID a 'music' -->
+    <audio id="music" autoplay loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="heart-container"></div>
+
+    <div class="container">
+        <img class="kitty" id="kitty" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnd4NDFvcjF1MnVyZWJhb252ZHZpOWtvMXFhZ3k0aTJndGtrM3JrNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4kewfUmsUC0YE/giphy.gif" alt="Cute Gif">
+        <h2>¡Feliz Cumpleaños, Emily Dayana! 🎉</h2>
+        <p class="intro">Hoy celebramos tu vida y lo maravillosa que eres. ¡Gracias por ser tan especial! 💖</p>
+        <div class="buttons">
+            <button class="yes" onclick="showMessage()">💌 Mensaje Especial</button>
+            <button onclick="toggleMusic()">🎶 Música</button>
+        </div>
+        <p class="hidden" id="message"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

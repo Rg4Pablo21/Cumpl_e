@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-garabato-abstracto-plano_23-2149336498.jpg?semt=ais_hybrid&w=740');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 25px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+    color: #444;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.kitty {
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #FF1493;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.intro {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ff85c1, #ff1493);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ff1493, #ff85c1);
+}
+
+.hidden {
+    display: none;
+    font-size: 22px;
+    color: #d63384;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    text-align: justify;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.heart {
+    position: absolute;
+    top: -50px;
+    font-size: 50px;
+    color: #ff69b4;
+    animation: fall 3s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes fall {
+    0% { top: -50px; opacity: 0.6; }
+    100% { top: 100vh; opacity: 0; }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .intro, .hidden {
+        font-size: 18px;
+    }
+}

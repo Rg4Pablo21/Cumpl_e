@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.showMessage = function() {
-        const message = '🌟 ¡Feliz cumpleaños, Emily! 🌟\n\nHoy celebramos tus 18 años, una etapa hermosa llena de nuevos sueños, caminos por recorrer y experiencias por vivir. 🎂🎉\n\nSiempre has sido una persona especial, llena de luz y alegría, y no hay palabras suficientes para agradecer el tenerte cerca. Que nunca pierdas esa chispa única que te hace ser tú. ✨\n\nDisfrutá este día como nunca y recuerda que siempre habrá alguien que te desea lo mejor desde el corazón (Yo). 💖\n\n¡Te quiero muchísimo, Emily! 🎈';
+        const message = '🌟 Te deseo un feliz Día del Cariño 💕 Que este día esté lleno de momentos especiales, sonrisas sinceras y abrazos que reconforten el alma. Que el amor y la amistad iluminen tu vida hoy y siempre, recordándote lo valiosa y especial que eres.';
 
         const messageContainer = document.getElementById('message');
         const button = document.querySelector('.yes');

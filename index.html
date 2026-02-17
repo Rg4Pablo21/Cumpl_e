@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Eileen</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <audio id="music" autoplay loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+
+    <div class="heart-container"></div>
+    <div class="container">
+        <img class="kitty" id="kitty" src="https://i.giphy.com/M0Wi576l2mJbNhrXwh.webp" alt="Hello Kitty">
+        <h2>¡Feliz Cumpleaños, mi Eileen! 🎉</h2>
+        <p class="intro">Hoy es un día muy especial, y quiero que lo sepas, eres la persona más increíble y especial para mí. ¡Te quiero muchísimo!</p>
+        <div class="buttons">
+            <button class="yes" onclick="showMessage()">¡Dale clic para mi mensaje especial!</button>
+            <button onclick="toggleMusic()">🎵 Reproduce esto primero 😊</button>
+        </div>
+        <p class="hidden" id="message"></p>
+    </div>
+
+   
+    <script src="main.js"></script>
+</body>
+</html>
